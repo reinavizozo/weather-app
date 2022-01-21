@@ -1,0 +1,78 @@
+body {
+  background-color: rgb(247, 237, 222);
+}
+
+h3 {
+  text-align: left;
+  margin-top: 10px;
+}
+
+header h2 {
+  margin-top: 25px;
+  font-size: 25px;
+  padding: 0 25px;
+}
+
+form {
+  margin: 10px 0 25px 0;
+}
+
+h1 {
+  margin: 10px 20px;
+  font-size: 54px;
+  padding: 0 25px;
+}
+
+input {
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
+button {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  color: white;
+  background-color: green;
+}
+.container {
+  text-align: center;
+  font-family: "Asap Condensed", sans-serif;
+  margin: 25px auto;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  max-width: 800px;
+}
+
+.forecast-container {
+  background-color: lightblue;
+}
+
+.search-bar {
+  width: 80%;
+}
+
+.day-date-time {
+  text-align: right;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 15px 0;
+  padding-right: 12px;
+}
+
+.temp-description {
+  text-align: left;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 15px 0;
+  padding-left: 12px;
+}
+
+.weather-icon {
+  font-size: 35px;
+  text-decoration: none;
+}
+
+.main-degree {
+  font-size: 20px;
+  vertical-align: 80%;
+}
