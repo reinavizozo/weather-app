@@ -29,12 +29,18 @@ function formattedDate(date) {
   let month = months[date.getMonth()];
   let today = date.getDate();
   let year = date.getFullYear();
-  let time = date.getHours();
+  let hour = date.getHours();
+  if (hour < 10) {
+    hour = `0${hour}`;
+  }
   let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
   let seconds = date.getSeconds();
 
   let todayIs = document.querySelector(".day-date-time");
-  todayIs.innerHTML = `${day} <br / > ${month} ${today}, ${year} <br /> ${time}:${minutes}:${seconds}`;
+  todayIs.innerHTML = `${day} <br / > ${month} ${today}, ${year} <br /> ${hour}:${minutes}:${seconds}`;
 }
 
 formattedDate(current);
@@ -81,3 +87,9 @@ function getCurrentPosition() {
 
 let button = document.querySelector("button");
 button.addEventListener("click", getCurrentPosition);
+
+let fahrenheit = document.querySelector("#fahrenheit-link");
+fahrenheit.addEventListener("click", convertToFahrenheit);
+
+let celsius = document.querySelector("#celsius-link");
+celsius.addEventListener("click", convertToCelsius);

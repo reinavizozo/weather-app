@@ -34,6 +34,10 @@ button {
   color: white;
   background-color: green;
 }
+
+a {
+  text-decoration: none;
+}
 .container {
   text-align: center;
   font-family: "Asap Condensed", sans-serif;
@@ -72,7 +76,7 @@ button {
   text-decoration: none;
 }
 
-.main-degree {
+.unit {
   font-size: 20px;
   vertical-align: 80%;
 }
