@@ -88,6 +88,14 @@ function getCurrentPosition() {
 let button = document.querySelector("button");
 button.addEventListener("click", getCurrentPosition);
 
+function convertToFahrenheit(event) {
+  event.preventDefault();
+  let currentTemperature = document.querySelector("#current-temperature");
+  let temperature = currentTemperature.innerHTML;
+  temperature = Number(temperature);
+  currentTemperature.innerHTML = Math.round((temperature * 9) / 5 + 32);
+}
+
 let fahrenheit = document.querySelector("#fahrenheit-link");
 fahrenheit.addEventListener("click", convertToFahrenheit);
 
