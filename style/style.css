@@ -54,6 +54,12 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 5px;
+}
+
 .container {
   text-align: center;
   font-family: "Asap Condensed", sans-serif;
@@ -85,12 +91,11 @@ a {
   padding-left: 12px;
 }
 
-.weather-icon {
-  font-size: 35px;
-  text-decoration: none;
-}
-
 .unit {
   font-size: 15px;
   vertical-align: 80%;
+}
+
+.description {
+  text-transform: capitalize;
 }

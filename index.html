@@ -27,26 +27,26 @@
         <h2 class="city">New York</h2>
       </header>
       <h1>
-        <span class="weather-icon">☀</span>
-        <span class="temperature" id="current-temperature">49</span
+        <img src="" alt="" id="weather-icon" />
+        <span class="temperature" id="current-temperature"></span
         ><span class="unit"
           ><a href="#" id="fahrenheit-link">°F</a>|<a href="#" id="celsius-link"
             >°C</a
           ></span
         >
-        Sunny
+        <span class="description"></span>
       </h1>
       <main>
         <div class="row">
           <div class="col temp-description">
             <ul>
-              <li>Precipition: 0%</li>
-              <li>Humidity: 31%</li>
-              <li>Wind: 2mph</li>
+              <li>Precipition: <span id="precipition">0%</span></li>
+              <li>Humidity: <span id="humidity">31</span>%</li>
+              <li>Wind: <span id="wind">2mph</span></li>
             </ul>
           </div>
 
-          <div class="col day-date-time">
+          <div class="col day-date-time" id="date">
             Thursday<br />
             December 23, 2021<br />
             2:49pm
@@ -102,8 +102,13 @@
     </div>
 
     <div class="container">
-      <form>
-        <input type="text" placeholder="Search city here" class="search-bar" />
+      <form id="search-form">
+        <input
+          type="text"
+          placeholder="Search city here"
+          class="search-bar"
+          id="city-input"
+        />
         <input type="submit" value="🔍" />
         <button>Current City</button>
       </form>
