@@ -1,9 +1,8 @@
 body {
-  background-color: rgb(247, 237, 222);
+  background-color: #74c8e4;
 }
 
 h1 {
-  margin-top: 25px;
   font-size: 38px;
   padding: 0 25px;
 }
@@ -32,7 +31,7 @@ input {
 ul {
   list-style-type: none;
   padding-inline-start: 0px;
-  text-align: left;
+  text-align: center;
   font-size: 17px;
   font-weight: normal;
 }
@@ -45,25 +44,24 @@ li {
 button {
   border: 1px solid transparent;
   border-radius: 10px;
-  color: white;
-  background-color: green;
   padding: 0;
 }
 
-a {
-  text-decoration: none;
-}
-
-img {
+#weather-icon {
   display: block;
   margin: 0 auto;
   padding-bottom: 5px;
 }
 
+#icon {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+}
 .container {
   text-align: center;
   font-family: "Asap Condensed", sans-serif;
-  margin: 25px auto;
+  margin: 0 auto;
   border: 2px solid transparent;
   border-radius: 50px;
   max-width: 600px;
@@ -71,11 +69,12 @@ img {
 }
 
 .forecast-container {
-  background-color: lightblue;
+  background-color: #f7f2d9;
+  max-width: 600px;
 }
 
 .search-bar {
-  width: 80%;
+  width: 85%;
 }
 
 .day-date-time {

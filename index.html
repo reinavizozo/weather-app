@@ -29,76 +29,37 @@
       <h1>
         <img src="" alt="" id="weather-icon" />
         <span class="temperature" id="current-temperature"></span
-        ><span class="unit"
-          ><a href="#" id="fahrenheit-link">°F</a>|<a href="#" id="celsius-link"
-            >°C</a
-          ></span
-        >
+        ><span class="unit">°F</span>
         <span class="description"></span>
       </h1>
-      <main>
-        <div class="row">
-          <div class="col temp-description">
-            <ul>
-              <li>Precipition: <span id="precipition">0%</span></li>
-              <li>Humidity: <span id="humidity">31</span>%</li>
-              <li>Wind: <span id="wind">2mph</span></li>
-            </ul>
-          </div>
 
-          <div class="col day-date-time" id="date">
-            Thursday<br />
-            December 23, 2021<br />
-            2:49pm
-          </div>
+      <div class="row">
+        <div class="col temp-description">
+          <ul>
+            <li>Precipition: <span id="precipition">0%</span></li>
+            <li>Humidity: <span id="humidity"></span>%</li>
+            <li>Wind: <span id="wind"></span>mph</li>
+          </ul>
         </div>
-      </main>
+
+        <div class="col day-date-time" id="date">
+          Thursday<br />
+          December 23, 2021<br />
+          2:49pm
+        </div>
+      </div>
     </div>
 
-    <div class="container forecast-container">
-      <section>
-        <h3>7-Day Forecast</h3>
-
-        <hr />
-
-        <div class="row">
-          <div class="col">
-            Friday <br />
-            <small class="temperature">61° 49°</small>
-            <div class="weather-icon">🌤</div>
-          </div>
-          <div class="col">
-            Saturday <br />
-            <small class="temperature">68° 53°</small>
-            <div class="weather-icon">🌤</div>
-          </div>
-          <div class="col">
-            Sunday <br />
-            <small class="temperature">67° 42°</small>
-            <div class="weather-icon">🌤</div>
-          </div>
-          <div class="col">
-            Monday <br />
-            <small class="temperature">64° 52°</small>
-            <div class="weather-icon">🌤</div>
-          </div>
-          <div class="col">
-            Tuesday <br />
-            <small class="temperature">70° 56°</small>
-            <div class="weather-icon">🌤</div>
-          </div>
-          <div class="col">
-            Wednesday <br />
-            <small class="temperature">74° 57°</small>
-            <div class="weather-icon">🌤</div>
-          </div>
-          <div class="col">
-            Thursday <br />
-            <small class="temperature">70° 51°</small>
-            <div class="weather-icon">🌧</div>
-          </div>
+    <div class="container forecast-container" id="forecast">
+      <div class="row">
+        <div class="col">
+          <div class="weekday">Friday</div>
+          <small class="temperature"
+            ><span class="max-temp">61°</span>
+            <span class="min-temp">49°</span></small
+          >
         </div>
-      </section>
+      </div>
     </div>
 
     <div class="container">
@@ -110,7 +71,7 @@
           id="city-input"
         />
         <input type="submit" value="🔍" />
-        <button>Current City</button>
+        <button>📍</button>
       </form>
     </div>
     <script src="style/script.js"></script>
